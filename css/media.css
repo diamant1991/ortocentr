@@ -12,6 +12,35 @@
 		padding-left: 5px;
 		padding-right: 5px;
 	}
+	.favorites-block{
+		padding-right: 0;
+	}
+	.favorites-block .basket-link{
+		position: relative;
+		height: auto;
+		margin: auto;
+	}
+	.basket-table{
+		overflow-x: auto;
+	}
+	.basket-table table{
+		width: 960px;
+	}
+	.after-table .sum-total{
+		float: none;
+		width: 100%;
+		padding-left: 0;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.after-table .continue,
+	.after-table .clear-basket,
+	.after-table .get-order-link{
+		float: none;
+		margin: auto;
+		margin-bottom: 15px;
+	}
+
 	.card-info{
 		padding-right: 0;
 	}
@@ -128,13 +157,32 @@
 	.hidden-xs{
 		display: none !important;
 	}
+	.content{
+		min-height: inherit;
+	}
 	.card-product{
 		margin-bottom: 0;
+	}
+	.profile-info,
+	.private-tab{
+		padding-left: 10px;
+	}
+	.info-basket{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.basket-title{
+		padding-right: 15px;
 	}
 	.recommended .title{
 		border-top: 2px solid #efefef;
 		margin-bottom: 10px;
     padding-top: 10px;
+	}
+	.info-link a{
+		display: block;
+		margin: auto;
+		margin-bottom: 15px;
 	}
 	.pagination .back.mobile{
 		float: left;
@@ -395,6 +443,9 @@
     white-space: nowrap;
     width: 22px;
 	}
+	.private-content{
+		padding-right: 10px;
+	}
 	
 }
 
@@ -402,11 +453,42 @@
 	.catalog-container .slide-item{
 		width: 50%;
 	}
+	.private-tab{
+		text-align: center;
+	}
+	.private-tab li{
+		float: none;
+		margin-right: 0;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.private-tab li a{
+		display: inline-block;
+	}
+	.private-order{
+		width: 100%;
+	}
 	.order-img{
 		display: none;
 	}
 	.order-basket-block{
 		padding-left: 15px;
+	}
+	.basket-title .promo-block{
+		clear: both;
+		float: none;
+		position: relative;
+		top: 5px;
+		padding-left: 10px;
+	}
+	.fav-link .del-product{
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+	.fav-link .add-all{
+		width: 100%;
+		margin-left: 0;
 	}
 }
 
