@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Оформление заказа</title>
+	<title>Мои заказы</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" >
 	<meta name="description" content="">
@@ -13,7 +13,7 @@
 	<script src="js/modernizr.min.js"></script>
 </head>
 <body>
-	<div class="container" id="container">
+	<div class="container">
 		<header class="main-header">
 			<div class="mobile-top-panel visible-xs clearfix">
 				<ul>
@@ -139,7 +139,7 @@
 						пн-пт с 9:00 до 22:00
 					</div>
 					<div class="profile">
-						<!-- <div class="dropdown">
+						<div class="dropdown">
 						  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						    Привет, <span>Александр</span>
 						  </button>
@@ -154,11 +154,6 @@
 						    	<a href="#">Выйти</a>
 						    </li>
 						  </ul>
-						</div> -->
-						<div class="profile-enter">
-							<a href="#">вход</a>
-							<span>/</span>
-							<a href="#">регистрация</a>
 						</div>
 					</div>
 				</div>
@@ -224,30 +219,10 @@
 			</div>
 		</header>
 		<!-- header -->
-
 		<div class="main-content">
 			<nav class="nav hidden-xs">
 				<div class="catalog-link">
 					<a href="#">Каталог товаров</a>
-					<ul>
-						<li><a href="#">Готовим ребенка к школе правильно</a></li>
-						<li><a href="#">Ортезы</a></li>
-						<li><a href="#">Ортопедические корсеты и корректоры осанки</a></li>
-						<li><a href="#">Бандажи</a></li>
-						<li><a href="#">Компрессионный трикотаж</a></li>
-						<li><a href="#">Ортопедическая обувь</a></li>
-						<li><a href="#">Ортопедические стельки и приспособления</a></li>
-						<li><a href="#">Индивидуальные ортопедические стельки</a></li>
-						<li><a href="#">Товары для беременных</a></li>
-						<li><a href="#">Все для здоровья детей</a></li>
-						<li><a href="#">Ортопедические подушки и матрасы</a></li>
-						<li><a href="#">Гимнастические мячи и массажные коврики</a></li>
-						<li><a href="#">Все для спорта</a></li>
-						<li><a href="#">Массажеры</a></li>
-						<li><a href="#">Уход за больными</a></li>
-						<li><a href="#">Костыли, трости, коляски</a></li>
-						<li><a href="#">Другие товары для здоровьям</a></li>
-					</ul>
 				</div>
 				<ul>
 					<li>
@@ -290,232 +265,305 @@
 				<a href="#" class="next">Главная › </a>
 				<a href="#" class="back">‹  Назад</a>
 			</div>
-			<!-- pagination -->
-			
-			<div class="other-content">
-				<h4>оформление заказа</h4>
-				<div class="important">* Все поля, помеченные звездочкой обязательны к заполнению.</div>
-				<div class="order clearfix">
-					<div class="col-xs-6">
-						<div class="row">
-							<div class="left-block">
-								<div class="get-order-info">
-									<div class="get-block">
-										<div class="get-title">
-											1. Контактные данные
-										</div>
-										<div class="get-content">
-											<div class="form-block">
-												<div class="input-block">
-													<p>Фамилия и Имя*</p>
-													<input type="text">
-												</div>
-												<div class="input-block clearfix">
-													<div class="col-xs-6">
-														<div class="row">
-															<p>Мобильный телефон*</p>
-															<input type="text">
-														</div>
-													</div>
-													<div class="col-xs-6">
-														<div class="row">
-															<div class="post-input">
-																<p>Электронная почта *</p>
-																<input type="text">
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="get-block">
-										<div class="get-title">
-											2. Город доставки
-										</div>
-										<div class="get-content">
-											<div class="city">
-												Город: <a href="#">Оренбург, Оренбургская область</a>
-											</div>
-											<div class="text">Нажмите на город, чтобы изменить. <br>Данные по способам доставки обновятся автоматически.</div>
-										</div>
-									</div>
-									<div class="get-block">
-										<div class="get-title">
-											3. Способ доставки
-										</div>
-										<div class="get-content">
-											<div class="delivery-get">
-												<div class="var-delivery">
-													<div class="delivery-check">
-														<input type="radio" class="radio" id="del1" name="delivery">
-														<label for="del1">Курьерская доставка</label>
-													</div>
-													<div class="info-del">
-														от <span class="rub">360</span>, от 2 дней <a href="#">Подробнее</a>
-													</div>
-													<div class="input-block">
-														<div class="adress-del">
-															<p>Адрес доставки:</p>
-															<input type="text">
-														</div>
-													</div>
-												</div>
-												<div class="var-delivery">
-													<div class="delivery-check">
-														<input type="radio" class="radio" id="del2" name="delivery">
-														<label for="del2">Пункты выдачи</label>
-													</div>
-													<div class="info-del">
-														от <span class="rub">360</span>, от 2 дней <a href="#">Подробнее</a>
-													</div>
-												</div>
-												<div class="var-delivery">
-													<div class="delivery-check">
-														<input type="radio" class="radio" id="del3" name="delivery">
-														<label for="del3">Почта России</label>
-													</div>
-													<div class="info-del">
-														от <span class="rub">360</span>, от 2 дней <a href="#">Подробнее</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="get-block">
-										<div class="get-title">
-											4. Способ оплаты
-										</div>
-										<div class="get-content">
-											<div class="delivery-get">
-												<div class="var-delivery">
-													<div class="delivery-check">
-														<input type="radio" class="radio" id="pay1" name="payment">
-														<label for="pay1">Наличными</label>
-													</div>
-													<div class="info-del">
-														Наличными при получении заказа
-													</div>
-												</div>
-												<div class="var-delivery">
-													<div class="delivery-check">
-														<input type="radio" class="radio" id="pay2" name="payment">
-														<label for="pay2">Онлайн на сайте</label>
-													</div>
-													<div class="info-del">
-														Банковские карты, терминалы и т.д. <a href="#">Подробнее</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<a href="#" class="send-order">Отправить заказ</a>
-							</div>
+
+			<div class="content clearfix">
+				<aside class="sidebar hidden-xs">
+					<div class="side-menu">
+						<div class="title">Каталог товаров</div>
+						<ul>
+							<li><a href="#">Готовим ребенка к школе правильно</a></li>
+							<li><a href="#">Ортезы</a></li>
+							<li><a href="#">Ортопедические корсеты и корректоры осанки</a></li>
+							<li><a href="#">Бандажи</a></li>
+							<li><a href="#">Компрессионный трикотаж</a></li>
+							<li><a href="#">Ортопедическая обувь</a></li>
+							<li><a href="#">Ортопедические стельки и приспособления</a></li>
+							<li><a href="#">Индивидуальные ортопедические стельки</a></li>
+							<li><a href="#">Товары для беременных</a></li>
+							<li><a href="#">Все для здоровья детей</a></li>
+							<li><a href="#">Ортопедические подушки и матрасы</a></li>
+							<li><a href="#">Гимнастические мячи и массажные коврики</a></li>
+							<li><a href="#">Все для спорта</a></li>
+							<li><a href="#">Массажеры</a></li>
+							<li><a href="#">Уход за больными</a></li>
+							<li><a href="#">Костыли, трости, коляски</a></li>
+							<li><a href="#">Другие товары для здоровьям</a></li>
+						</ul>
+					</div>
+					<div class="vk-widget">
+						<img src="images/vk-widget.jpg" height="301" width="219" alt="">
+					</div>
+				</aside>
+
+				<article class="center-content">
+					<h4>Мои заказы</h4>
+					<div class="profile-info">
+						Следите за статусом своих заказов. Вы можете проверять информацию обо всех своих <br> заказах и следить за доставкой.
+					</div>
+					<div class="private-tab">
+						<ul class="clearfix">
+							<li><a href="#">Профиль</a></li>
+							<li><a class="active">Мои заказы</a></li>
+							<li><a href="#">Избранное</a></li>
+							<li><a href="#">Моя корзина</a></li>
+						</ul>
+					</div>
+					<div class="private-content">
+						<div class="order-table">
+							<table>
+								<thead>
+									<tr>
+										<th></th>
+										<th>Дата:</th>
+										<th>Номер заказа:</th>
+										<th>Статус:</th>
+										<th>Сумма:</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="expect">
+										<td>
+											<img src="images/expect.png" height="24" width="25" alt="">
+										</td>
+										<td>14.12.2015</td>
+										<td>#098765351</td>
+										<td>Ожидает отправки</td>
+										<td>8 524 руб.</td>
+									</tr>
+									<tr class="delivered">
+										<td>
+											<img src="images/delivered.png" height="25" width="25" alt="">
+										</td>
+										<td>14.12.2015</td>
+										<td>#098765351</td>
+										<td>Доставлен клиенту</td>
+										<td>8 524 руб.</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
-					<div class="col-xs-6">
-						<div class="row">
-							<div class="right-block">
-								<div class="order-basket">
-									<div class="title">Ваш заказ:</div>
-									<div class="order-basket-block">
-										<a href="#" class="del-order">
-											<img src="images/close.png" height="7" width="7" alt="">
-										</a>
-										<div class="order-img">
-											<div class="table-block">
-												<div class="block-vertical">
-													<img src="images/order.jpg" height="88" width="88" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="order-desc">
-											<div class="table-block">
-												<div class="block-vertical">
-													<div class="name">
-														<strong>Эспандер для кисти руки Черный</strong>
-													</div>
-													<div class="material">
-														Размер: <b>38</b>
-														Артикул: <b>1090</b>
-														Цвет: <span class="color" style="background: #333"></span>
-													</div>
-													<div class="price">
-														2790,00 <span>руб.</span>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="order-amount">
-											<div class="table-block">
-												<div class="block-vertical">
-													<div class="amount">
-														<a href="#" class="minus"><span class="table-block"><span class="block-vertical">-</span></span></a>
-														<input type="text" value="1">
-														<a href="#" class="plus"><span class="table-block"><span class="block-vertical">+</span></span></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="order-basket-block">
-										<a href="#" class="del-order">
-											<img src="images/close.png" height="7" width="7" alt="">
-										</a>
-										<div class="order-img">
-											<div class="table-block">
-												<div class="block-vertical">
-													<img src="images/order.jpg" height="88" width="88" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="order-desc">
-											<div class="table-block">
-												<div class="block-vertical">
-													<div class="name">
-														<strong>Эспандер для кисти руки Черный</strong>
-													</div>
-													<div class="material">
-														Размер: <b>38</b>
-														Артикул: <b>1090</b>
-														Цвет: <span class="color" style="background: #333"></span>
-													</div>
-													<div class="price">
-														2790,00 <span>руб.</span>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="order-amount">
-											<div class="table-block">
-												<div class="block-vertical">
-													<div class="amount">
-														<a href="#" class="minus"><span class="table-block"><span class="block-vertical">-</span></span></a>
-														<input type="text" value="1">
-														<a href="#" class="plus"><span class="table-block"><span class="block-vertical">+</span></span></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="after-order">
-										<b>Итого</b> (без учета доставки): <span class="price">13390,00 <b>руб.</b></span>
-										<p>(Доставка бесплатно при заказе от 6000 руб.)</p>
-									</div>
-									<div class="info-text-order">
-										Если у вас есть промо-код, то введите номер в <a href="#">корзине заказов</a>
-									</div>
+					<div class="info-order-container">
+						<div class="info-order">
+							<div class="title">Информация о заказе:</div>
+							<ul>
+								<li>Номер заказа: <span>#28783035</span></li>
+								<li>Дата размещения заказа: <span>22.12.15</span></li>
+								<li>Доставка: <span class="blue">Бесплатно</span></li>
+							</ul>
+						</div>
+						<div class="adress-container clearfix">
+							<div class="col-xs-6">
+								<div class="row">
+									<div class="title">Адрес плательщика:</div>
+									<ul>
+										<li>Иван Иванович Иванов</li>
+										<li>ул. Чкалова 36-67</li>
+										<li>Оренбург, 460001 ОРЕНБУРГСКАЯ ОБЛ.</li>
+										<li>Российская Федерация</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="row">
+									<div class="title">Адрес доставки:</div>
+									<ul>
+										<li>АРМАДА</li>
+										<li>ШАРЛИКСКОЕ ШОССЕ, 1/2 4</li>
+										<li>ОРЕНБУРГ, 460019 ОРЕНБУРГСКАЯ ОБЛ.</li>
+										<li>Российская Федерация</li>
+									</ul>
 								</div>
 							</div>
 						</div>
+						<div class="total-table">
+							<table>
+								<thead>
+									<tr>
+										<th>Товар:</th>
+										<th>Артикул:</th>
+										<th>Количество:</th>
+										<th>Сумма:</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<td></td>
+										<td rowspan="3">
+											<a href="#" class="pdf">pdf</a>
+										</td>
+										<td><span class="normal">Всего товаров:</span></td>
+										<td><b>3 012 руб.</b></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><span class="normal">Стоимость товаров:</span></td>
+										<td><b>0 руб.</b></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td><span class="normal">Всего (с учетом НДС):</span></td>
+										<td><b>3 012 руб.</b></td>
+									</tr>
+								</tfoot>
+								<tbody>
+									<tr>
+										<td>Название товара</td>
+										<td>0987635</td>
+										<td>3</td>
+										<td>1 004 руб.</td>
+									</tr>
+									<tr>
+										<td>Название товара</td>
+										<td>0987635</td>
+										<td>3</td>
+										<td>1 004 руб.</td>
+									</tr>
+									<tr>
+										<td>Название товара</td>
+										<td>0987635</td>
+										<td>3</td>
+										<td>1 004 руб.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
-				</div>
+					<div class="status-table">
+						<div class="status-table-block">
+							<table>
+								<tr>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">
+													<a href="#" class="arrow"></a>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">
+													14.07.2015
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">#098765351</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">Доставлен клиенту</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">8 524 руб.</div>
+											</div>
+										</div>
+								</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">
+													<a href="#" class="arrow"></a>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">
+													14.07.2015
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">#098765351</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">Доставлен клиенту</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">8 524 руб.</div>
+											</div>
+										</div>
+								</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">
+													<a href="#" class="arrow"></a>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">
+													14.07.2015
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">#098765351</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">Доставлен клиенту</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="status-block">
+											<div class="table-block">
+												<div class="block-vertical">8 524 руб.</div>
+											</div>
+										</div>
+								</td>
+								</tr>
+												</table>
+						</div>
+				</article>
 			</div>
 			<div class="content-text">
 				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
 			</div>
 		</div>
+		<!-- main content -->
 		<footer class="footer">
 			<div class="top-foot">
 				<ul class="clearfix">
@@ -625,6 +673,5 @@
 	<script src="js/vendor.js"></script>
 
 	<script src="js/script.js"></script>
-
 </body>
 </html>

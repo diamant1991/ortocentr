@@ -3,9 +3,20 @@
   src: url('../fonts/FuturaBookC.eot');
   src: url('../fonts/FuturaBookC.eot') format('embedded-opentype'), url('../fonts/FuturaBookC.woff2') format('woff2'), url('../fonts/FuturaBookC.woff') format('woff'), url('../fonts/FuturaBookC.ttf') format('truetype'), url('../fonts/FuturaBookC.svg#FuturaBookC') format('svg');
 }
+@font-face {
+  font-family: 'PTSansCaptionRegular';
+  src: url('../fonts/PTSansCaptionRegular.eot');
+  src: url('../fonts/PTSansCaptionRegular.eot') format('embedded-opentype'), url('../fonts/PTSansCaptionRegular.woff2') format('woff2'), url('../fonts/PTSansCaptionRegular.woff') format('woff'), url('../fonts/PTSansCaptionRegular.ttf') format('truetype'), url('../fonts/PTSansCaptionRegular.svg#PTSansCaptionRegular') format('svg');
+}
+@font-face {
+  font-family: 'PTSansCaptionBold';
+  src: url('../fonts/PTSansCaptionBold.eot');
+  src: url('../fonts/PTSansCaptionBold.eot') format('embedded-opentype'), url('../fonts/PTSansCaptionBold.woff2') format('woff2'), url('../fonts/PTSansCaptionBold.woff') format('woff'), url('../fonts/PTSansCaptionBold.ttf') format('truetype'), url('../fonts/PTSansCaptionBold.svg#PTSansCaptionBold') format('svg');
+}
+/* @normal: 'PT Sans Caption', sans-serif; */
 b,
 strong {
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
 }
 a {
   text-decoration: none;
@@ -13,12 +24,12 @@ a {
 h4 {
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
 }
 h5 {
   font-size: 16px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
 }
 .table-block {
   display: table;
@@ -30,7 +41,7 @@ h5 {
   vertical-align: middle;
 }
 body {
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'PTSansCaptionRegular';
   color: #333;
 }
 .top-panel {
@@ -42,7 +53,7 @@ body {
   font-size: 10px;
   text-transform: uppercase;
   color: #858585;
-  width: 425px;
+  width: 430px;
   padding-left: 15px;
   padding-top: 14px;
 }
@@ -56,7 +67,7 @@ body {
   float: left;
   font-size: 10px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   color: #858585;
   padding-right: 7px;
   padding-top: 8px;
@@ -94,7 +105,7 @@ body {
 }
 .dropdown button span {
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
 }
 .dropdown button:before {
   content: "";
@@ -158,7 +169,7 @@ body {
   -webkit-border-radius: 25px;
   border-radius: 25px;
   font-size: 13px;
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'PTSansCaptionRegular';
 }
 .search .s-sub {
   display: block;
@@ -191,7 +202,7 @@ body {
   text-align: center;
   color: #fff;
   font-size: 10.5px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   line-height: 22px;
   padding-right: 1px;
   text-decoration: none;
@@ -211,7 +222,7 @@ body {
 .nav {
   position: relative;
   padding-left: 210px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   font-size: 13px;
   text-transform: uppercase;
 }
@@ -411,7 +422,7 @@ body {
   height: 35px;
   padding-left: 20px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   font-size: 14px;
   line-height: 35px;
   background-color: #f4f4f4;
@@ -446,7 +457,7 @@ body {
 }
 .product-day h6 {
   font-size: 14px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   text-transform: uppercase;
 }
 .product-day .day-img {
@@ -459,14 +470,14 @@ body {
 }
 .product-day .name {
   font-size: 14px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   text-transform: uppercase;
   margin-bottom: 7px;
 }
 .product-day .price {
   font-size: 16px;
   color: #00b8bb;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   margin-bottom: 7px;
 }
 .product-day .buy-link {
@@ -480,8 +491,11 @@ body {
   margin: auto;
   letter-spacing: 1px;
   font-size: 10px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   text-transform: uppercase;
+}
+.product-day .buy-link:hover {
+  background-color: #333;
 }
 .center-content {
   padding-left: 15px;
@@ -557,7 +571,7 @@ body {
 .carousel-sale h4 {
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   display: inline-block;
   margin-right: 30px;
 }
@@ -590,13 +604,13 @@ body {
 }
 .slide-item .name {
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   font-size: 14px;
   margin-bottom: 15px;
 }
 .slide-item .price {
   font-size: 16px;
-  font-weight: bold;
+  font-family: 'PTSansCaptionBold';
   color: #00b8bb;
   letter-spacing: 1px;
   margin-bottom: 5px;
@@ -618,7 +632,7 @@ body {
   height: 30px;
   color: #fff;
   line-height: 30px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   font-size: 10px;
   background-color: #00b8bb;
   text-transform: uppercase;
@@ -638,6 +652,9 @@ body {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.slide-item .add-basket:hover {
+  background-color: #333;
+}
 .slide-item .new-label {
   width: 33px;
   height: 33px;
@@ -647,7 +664,7 @@ body {
   top: -1px;
   font-size: 9px;
   color: #fff;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   text-transform: uppercase;
   padding-top: 7px;
   padding-left: 11px;
@@ -668,7 +685,7 @@ body {
   top: -1px;
   font-size: 9px;
   color: #fff;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   text-transform: uppercase;
   padding-top: 7px;
   padding-left: 11px;
@@ -746,7 +763,7 @@ body {
   display: inline-block;
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
 }
 .news-item {
   padding-left: 10px;
@@ -757,7 +774,7 @@ body {
 }
 .news-item .name {
   font-size: 15px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   margin-bottom: 15px;
   line-height: 1.2;
 }
@@ -1094,7 +1111,7 @@ body {
 }
 .payment-block .title {
   font-size: 14px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   margin-bottom: 15px;
 }
 .payment-block p {
@@ -1137,7 +1154,7 @@ body {
 }
 .content-block .title {
   font-size: 17px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   margin-bottom: 20px;
 }
 .content-block p {
@@ -1272,7 +1289,7 @@ body {
   padding-left: 20px;
   text-transform: uppercase;
   color: #fff;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   font-size: 13px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1334,7 +1351,7 @@ body {
   padding-bottom: 7px;
 }
 .mobile-search-block input[type="text"] {
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'PTSansCaptionRegular';
   width: 100%;
   height: 30px;
   background-color: #fff;
@@ -1400,7 +1417,7 @@ body {
   position: absolute;
   z-index: 2;
   font-size: 12px;
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'PTSansCaptionRegular';
   top: 8px;
   margin-left: 10px;
 }
@@ -1412,7 +1429,7 @@ body {
   border: 1px solid #d9d9d9;
   padding-left: 25px;
   font-size: 12px;
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'PTSansCaptionRegular';
 }
 .filter-btn {
   display: block;
@@ -1424,8 +1441,8 @@ body {
   padding-left: 25px;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: 'PT Sans Caption', sans-serif;
-  font-weight: 700;
+  font-family: 'PTSansCaptionRegular';
+  font-family: 'PTSansCaptionBold';
   background-color: #f4f4f4;
   width: 100%;
   text-align: left;
@@ -1480,7 +1497,7 @@ body {
   user-select: none;
   font-size: 12px;
   text-transform: uppercase;
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'PTSansCaptionRegular';
 }
 .checkbox:not(checked) {
   position: absolute;
@@ -1515,8 +1532,8 @@ body {
   -ms-user-select: none;
   user-select: none;
   font-size: 13px;
-  font-family: 'PT Sans Caption', sans-serif;
-  font-weight: 700;
+  font-family: 'PTSansCaptionRegular';
+  font-family: 'PTSansCaptionBold';
 }
 .radio:not(checked) {
   position: absolute;
@@ -1705,7 +1722,7 @@ body {
 .profile-enter {
   font-size: 11px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   color: #adadad;
   padding-left: 30px;
   padding-top: 15px;
@@ -1743,11 +1760,11 @@ body {
   font-size: 10px;
   color: #fff;
   text-transform: uppercase;
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'PTSansCaptionRegular';
   outline: 0;
   margin: auto;
   cursor: pointer;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
 }
 .download-btn:hover {
   background: #00b8bb;
@@ -1775,7 +1792,7 @@ body {
   background: #f4f4f4;
   padding-left: 12px;
   font-size: 14px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
 }
 .order .get-content {
   padding-left: 30px;
@@ -1803,9 +1820,9 @@ body {
   background: #00b8bb;
   color: #fff;
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   font-size: 13px;
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'PTSansCaptionRegular';
   letter-spacing: 1px;
   margin-top: 10px;
   -webkit-transition: all 0.15s ease-in-out;
@@ -1830,7 +1847,7 @@ body {
   border: 2px solid #e7e7e7;
   font-size: 14px;
   color: #333;
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'PTSansCaptionRegular';
 }
 .post-input {
   padding-left: 8px;
@@ -1870,7 +1887,7 @@ body {
   line-height: 40px;
   text-align: center;
   font-size: 13px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   text-transform: uppercase;
   background: #00b8bb;
   color: #fff;
@@ -1881,7 +1898,7 @@ body {
 }
 .order-basket > .title {
   font-size: 16px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   margin-bottom: 15px;
 }
 .order-basket-block {
@@ -1917,8 +1934,8 @@ body {
   text-align: center;
   font-size: 14px;
   color: #333;
-  font-family: 'PT Sans Caption', sans-serif;
-  font-weight: 700;
+  font-family: 'PTSansCaptionRegular';
+  font-family: 'PTSansCaptionBold';
 }
 .order-basket-block .order-amount a {
   display: inline-block;
@@ -1931,7 +1948,7 @@ body {
   text-align: center;
   color: #fff;
   font-size: 12px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
 }
 .order-basket-block .order-amount a:hover {
   background: #00b8bb;
@@ -1941,7 +1958,7 @@ body {
   text-transform: uppercase;
 }
 .order-basket-block .price {
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   color: #00b8bb;
   font-size: 16px;
   padding-top: 10px;
@@ -1994,7 +2011,7 @@ body {
 .after-order .price {
   font-size: 18px;
   color: #00b8bb;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
 }
 .after-order .price b {
   font-size: 18px;
@@ -2026,7 +2043,7 @@ body {
   height: 25px;
   line-height: 25px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   background: #00b8bb;
   font-size: 13px;
   text-align: center;
@@ -2049,7 +2066,7 @@ body {
   height: 25px;
   line-height: 25px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   background: #999;
   font-size: 13px;
   text-align: center;
@@ -2124,17 +2141,27 @@ body {
   float: left;
   text-align: center;
   font-size: 13px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   letter-spacing: 1px;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .card-info .card-link .in-basket {
   width: 145px;
   background: #00b8bb;
 }
+.card-info .card-link .in-basket:hover {
+  background: #333;
+}
 .card-info .card-link .fast-buy {
   width: 190px;
   background: #333;
   margin-left: 15px;
+}
+.card-info .card-link .fast-buy:hover {
+  background: #00b8bb;
 }
 .card-info .add-fav {
   margin-bottom: 15px;
@@ -2148,7 +2175,7 @@ body {
   text-align: center;
   font-size: 13px;
   color: #333;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   letter-spacing: 1px;
   text-transform: uppercase;
   background: url(../images/heart-fav.png) no-repeat 22px 12px;
@@ -2378,18 +2405,24 @@ body {
 .mobile-product-link .add-basket {
   background: #00b8bb;
   color: #fff;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.mobile-product-link .add-basket:hover {
+  background: #333;
+}
 .mobile-product-link .fast-buy {
   background: #333;
   color: #fff;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.mobile-product-link .fast-buy:hover {
+  background: #00b8bb;
 }
 .mobile-product-link .add-fav-link {
   width: 100%;
@@ -2520,7 +2553,7 @@ body {
 }
 .basket-table table .name {
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: 'PTSansCaptionBold';
   margin-bottom: 3px;
 }
 .basket-table table .name a {
@@ -2542,7 +2575,7 @@ body {
 .basket-table table .price {
   font-size: 16px;
   color: #00b8bb;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
 }
 .basket-table table .price span {
   color: #333;
@@ -2554,8 +2587,8 @@ body {
   height: 33px;
   outline: 0;
   border: 2px solid #e7e7e7;
-  font-weight: 700;
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'PTSansCaptionBold';
+  font-family: 'PTSansCaptionRegular';
   font-size: 14px;
   color: 333;
 }
@@ -2574,8 +2607,8 @@ body {
   text-align: center;
   font-size: 14px;
   color: #333;
-  font-family: 'PT Sans Caption', sans-serif;
-  font-weight: 700;
+  font-family: 'PTSansCaptionRegular';
+  font-family: 'PTSansCaptionBold';
 }
 .basket-table table .amount a {
   display: inline-block;
@@ -2588,7 +2621,7 @@ body {
   text-align: center;
   color: #fff;
   font-size: 12px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
 }
 .basket-table table .amount a:hover {
   background: #00b8bb;
@@ -2603,7 +2636,7 @@ body {
   border: 1px solid #00b8bb;
   font-size: 10.5px;
   color: #333;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   padding-left: 10px;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
@@ -2627,7 +2660,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-size: 11px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   letter-spacing: 1px;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
@@ -2679,7 +2712,7 @@ body {
 .after-table .sum-total span {
   font-size: 18px;
   color: #00b8bb;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
 }
 .after-table .sum-total .price {
   padding-left: 10px;
@@ -2693,7 +2726,7 @@ body {
   text-align: center;
   padding: 15px 0;
   font-size: 13px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -2788,13 +2821,13 @@ body {
 }
 .e-mail .title {
   font-size: 14px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   margin-bottom: 12px;
   padding-top: 10px;
 }
 .e-mail .checkbox + label {
   font-size: 13px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
 }
 .e-mail .checkbox:not(checked) + label:before {
   top: 3px;
@@ -2817,7 +2850,7 @@ body {
   text-transform: uppercase;
   background: #00b8bb;
   font-size: 10px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   letter-spacing: 1px;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
@@ -2850,7 +2883,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-size: 11px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   letter-spacing: 1px;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
@@ -2876,7 +2909,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-size: 11px;
-  font-weight: 700;
+  font-family: 'PTSansCaptionBold';
   letter-spacing: 1px;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
@@ -2889,4 +2922,191 @@ body {
 }
 .fav-link .add-all:hover {
   background-color: #333;
+}
+.order-table {
+  overflow-x: auto;
+}
+.order-table table {
+  width: 725px;
+}
+.order-table table thead {
+  text-align: left;
+}
+.order-table table thead th {
+  vertical-align: middle;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #858585;
+}
+.order-table table tbody td {
+  vertical-align: middle;
+  height: 50px;
+  font-size: 15px;
+  font-family: 'PTSansCaptionBold';
+}
+.order-table table tbody td:first-child {
+  width: 85px;
+  padding-left: 20px;
+}
+.order-table table tbody td:nth-child(2) {
+  width: 145px;
+}
+.order-table table tbody td:nth-child(3) {
+  width: 160px;
+}
+.order-table table tbody td:nth-child(4) {
+  width: 200px;
+}
+.order-table table tbody .expect td {
+  background-color: #f2f2f2;
+}
+.order-table table tbody .delivered td {
+  color: #00b8bb;
+}
+.info-order-container {
+  padding-top: 25px;
+  border-top: 1px solid #e9e9e9;
+  font-size: 13px;
+  padding-left: 35px;
+}
+.info-order-container .title {
+  font-size: 15px;
+  font-family: 'PTSansCaptionBold';
+  margin-bottom: 15px;
+}
+.info-order-container li {
+  margin-bottom: 3px;
+}
+.info-order {
+  margin-bottom: 25px;
+}
+.info-order li {
+  color: #858585;
+}
+.info-order li span {
+  color: #333;
+}
+.info-order li .blue {
+  color: #00b8bb;
+}
+.adress-container {
+  margin-bottom: 40px;
+}
+.total-table {
+  overflow-x: auto;
+}
+.total-table table {
+  width: 725px;
+}
+.total-table table thead th {
+  text-align: left;
+  color: #858585;
+  font-size: 13px;
+  border-bottom: 1px solid #e5e5e5;
+  vertical-align: middle;
+  padding: 5px 0;
+}
+.total-table table thead th:nth-child(3) {
+  padding-left: 40px;
+}
+.total-table table tbody td {
+  height: 40px;
+  font-size: 15px;
+  font-family: 'PTSansCaptionBold';
+  vertical-align: middle;
+  border-bottom: 1px solid #e5e5e5;
+}
+.total-table table tbody td:first-child {
+  width: 310px;
+}
+.total-table table tbody td:nth-child(2) {
+  width: 100px;
+}
+.total-table table tbody td:nth-child(3) {
+  width: 210px;
+  padding-left: 40px;
+}
+.total-table table tfoot tr:first-child td:nth-child(3),
+.total-table table tfoot tr:first-child td:last-child {
+  padding-top: 20px;
+}
+.total-table table tfoot tr:last-child td {
+  padding-bottom: 20px;
+}
+.total-table table tfoot td {
+  vertical-align: middle;
+  padding: 1px 0;
+}
+.total-table table tfoot td .normal {
+  color: #858585;
+}
+.total-table table tfoot td b {
+  font-size: 15px;
+}
+.total-table table .pdf {
+  display: block;
+  width: 75px;
+  height: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #00b8bb;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'PTSansCaptionBold';
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+.total-table table .pdf:hover {
+  background-color: #333;
+}
+.status-table {
+  border-top: 1px solid #e7e7e7;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+.status-table table {
+  width: 725px;
+}
+.status-table table tr:hover .status-block {
+  background-color: #00b8bb;
+  color: #fff;
+}
+.status-table table tr:hover .arrow {
+  background: url(../images/expect-white.png) no-repeat;
+}
+.status-table table td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  vertical-align: middle;
+}
+.status-table table td:first-child {
+  width: 80px;
+}
+.status-table table td:first-child .status-block {
+  padding-left: 20px;
+}
+.status-table table td:nth-child(2) {
+  width: 145px;
+}
+.status-table table td:nth-child(3) {
+  width: 165px;
+}
+.status-table table td:nth-child(4) {
+  width: 200px;
+}
+.status-table .status-block {
+  height: 47px;
+  background-color: #f2f2f2;
+  font-size: 15px;
+  font-family: 'PTSansCaptionBold';
+}
+.status-table .arrow {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../images/expect.png) no-repeat;
+}
+.status-table-block {
+  overflow-x: auto;
 }
