@@ -9,6 +9,9 @@ function opcl(arr, e){
       $(e).show();       
   }
 }
+$(document).ready(function(){
+  $('.modal__tel').inputmask("+7 (999) 999 - 99 - 99");
+});
 
 $(document).ready(function() {
 	$('.view').click(function(e) {
@@ -101,4 +104,57 @@ $(document).mouseup(function (e) {
       container.slideUp(150);
       $('.slct').removeClass('active');
   }
+});
+
+$(function() {
+	$('.enter__link').click(function(e) {
+		var profile = $('.profile__form_enter'),
+				mainForm = $('.profile__form');
+		e.preventDefault();
+		if(mainForm.is(':visible')){
+			mainForm.fadeOut(300);
+			mainForm.removeClass('active');	
+		}
+		profile.fadeIn(300);
+		profile.addClass('active');
+	});
+	$('.registration__link').click(function(e) {
+		var profile = $('.profile__form_register'),
+				mainForm = $('.profile__form');
+		e.preventDefault();
+		if(mainForm.is(':visible')){
+			mainForm.fadeOut(300);
+			mainForm.removeClass('active');	
+		}
+		profile.fadeIn(300);
+		profile.addClass('active');
+	});
+
+	$('.close__profile').click(function(e) {
+		var profile = $('.profile__form');
+		e.preventDefault();
+		if(profile.is(':visible')){
+			profile.fadeOut(300);
+			profile.removeClass('active');
+		}
+	});
+});
+
+$(function() {
+	$('.in-basket').click(function(e) {
+		e.preventDefault();
+		$('.basket__modal').show();
+	});
+	$('.close__modal').click(function(e) {
+		e.preventDefault();
+		if($('.basket__modal').is(':visible'))
+		$('.basket__modal').hide();
+	});
+
+	$(document).mouseup(function (e) {
+	  var modal = $(".basket__modal");
+	  if (modal.has(e.target).length === 0){
+	    modal.hide()
+	  }
+	});
 });

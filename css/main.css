@@ -82,6 +82,7 @@ body {
 .profile {
   float: left;
   width: 175px;
+  position: relative;
 }
 .dropdown.open button {
   -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.175);
@@ -3110,4 +3111,215 @@ body {
 }
 .status-table-block {
   overflow-x: auto;
+}
+.profile__social-list img {
+  width: 42px;
+  height: 42px;
+}
+.profile__social-list li {
+  float: left;
+}
+.profile__form_enter {
+  right: 70px;
+}
+.profile__form_register {
+  right: -30px;
+}
+.profile__form {
+  position: absolute;
+  z-index: 5;
+  width: 265px;
+  border: 1px solid #dedede;
+  background: #fff;
+  -webkit-transition: margin 0.3s ease-in-out;
+  -moz-transition: margin 0.3s ease-in-out;
+  -o-transition: margin 0.3s ease-in-out;
+  transition: margin 0.3s ease-in-out;
+  margin-top: 50px;
+  display: none;
+}
+.profile__form.active {
+  margin-top: 0;
+}
+.profile__form .checkbox + label {
+  font-size: 11px;
+  font-family: 'Tahoma', Arial, sans-serif;
+  color: #333333;
+  text-transform: none;
+  padding-top: 1px;
+}
+.profile__form .delivery-check {
+  float: left;
+}
+.forget__password {
+  font-size: 11px;
+  font-family: 'Tahoma', Arial, sans-serif;
+  float: right;
+  padding-top: 4px;
+}
+.forget__password a {
+  color: #00b8bb;
+  text-decoration: underline;
+}
+.profile__form-content {
+  padding: 20px 25px;
+  padding-bottom: 30px;
+}
+.form__title {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #282828;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.profile__social-title {
+  font-family: 'Tahoma', Arial, sans-serif;
+  font-size: 11px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+.input__item {
+  display: block;
+  width: 100%;
+  height: 32px;
+  border: 0;
+  outline: 0;
+  padding-left: 15px;
+  font-family: 'Tahoma', Arial, sans-serif;
+  font-size: 12px;
+  color: #333;
+  background: #ececec;
+}
+.profile__input-block {
+  margin-bottom: 10px;
+}
+.profile__social-list {
+  margin-bottom: 10px;
+}
+.profile__btn {
+  display: inline-block;
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+  background: #282828;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.profile__btn:hover {
+  background: #00b8bb;
+}
+.profile__text {
+  font-family: 'Tahoma', Arial, sans-serif;
+  font-size: 11px;
+  color: #333333;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+.profile__form-item:after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  display: block;
+  margin: 17px 0;
+  background: #ececec;
+}
+.close__profile {
+  display: block;
+  width: 10px;
+  height: 9px;
+  position: absolute;
+  z-index: 2;
+  right: 8px;
+  top: 3px;
+}
+.basket__modal {
+  position: fixed;
+  width: 485px;
+  z-index: 100;
+  left: 50%;
+  margin-left: -242.5px;
+  top: 25%;
+  background: #fff;
+  display: none;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  padding: 20px 25px;
+}
+.modal__call_title {
+  color: #333333;
+  font-family: 'Tahoma', Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.modal__call {
+  background: #ebf9fa;
+  padding: 10px 15px;
+}
+.basket__info {
+  font-family: 'Tahoma', Arial, sans-serif;
+  font-size: 12px;
+  color: #858585;
+  margin-bottom: 10px;
+}
+.basket__info a {
+  color: #00b8bb;
+  text-decoration: underline;
+}
+.move__link {
+  float: left;
+  font-family: 'Tahoma', Arial, sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #00b8bb;
+  position: relative;
+  top: 6px;
+}
+.modal__call_small-title {
+  font-family: 'Tahoma', Arial, sans-serif;
+  font-size: 12px;
+  color: #858585;
+  margin-bottom: 10px;
+}
+.order__link {
+  float: right;
+  display: block;
+  width: 215px;
+  text-align: center;
+}
+.modal__link {
+  margin-bottom: 15px;
+}
+.modal__tel {
+  display: inline-block;
+  width: 190px;
+  height: 30px;
+  background: #fff;
+  border: 0;
+  outline: 0;
+  margin-right: 10px;
+  padding-left: 15px;
+  font-family: 'Tahoma', Arial, sans-serif;
+  font-size: 12px;
+  font-size: #333;
+}
+.close__modal {
+  position: absolute;
+  z-index: 2;
+  right: 8px;
+  top: 5px;
 }
