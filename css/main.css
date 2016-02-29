@@ -69,7 +69,7 @@ body {
   text-transform: uppercase;
   font-family: 'PTSansCaptionBold';
   color: #858585;
-  padding-right: 7px;
+  padding-left: 7px;
   padding-top: 8px;
 }
 .top-panel .number b {
@@ -78,6 +78,7 @@ body {
   padding-right: 10px;
   position: relative;
   top: 1px;
+  padding-left: 10px;
 }
 .profile {
   float: left;
@@ -119,7 +120,7 @@ body {
 }
 .bottom-panel {
   padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 .bottom-panel .icons-block {
   text-align: center;
@@ -144,6 +145,13 @@ body {
   top: -5px;
   opacity: 1;
 }
+.logo__item {
+  background: url('../images/logo-base.png') no-repeat;
+  -o-background-size: contain;
+  background-size: contain;
+  width: 240px;
+  height: 45px;
+}
 .logo {
   text-transform: uppercase;
   text-align: center;
@@ -151,6 +159,10 @@ body {
   letter-spacing: 5px;
   height: 32px;
   line-height: 36px;
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
 }
 .logo a {
   color: #000;
@@ -838,8 +850,8 @@ body {
   background-color: #222;
 }
 .top-foot {
-  height: 60px;
   padding: 20px 30px;
+  padding-bottom: 0;
 }
 .top-foot li {
   float: left;
@@ -865,9 +877,8 @@ body {
   color: #fff;
 }
 .center-foot {
-  padding: 25px 55px;
+  padding: 0 55px;
   height: 120px;
-  border-right: 1px solid #353535;
 }
 .subscribe {
   position: relative;
@@ -900,24 +911,18 @@ body {
   outline: 0;
   cursor: pointer;
 }
-.bot-foot {
-  border-top: 1px solid #353535;
-}
 .copyright {
   text-align: center;
   font-size: 11px;
   color: #fff;
   line-height: 1.6;
-  padding-top: 65px;
   height: 120px;
-  border-right: 1px solid #353535;
 }
 .copyright p {
   opacity: 0.3;
 }
 .center-menu {
   text-align: center;
-  padding-top: 15px;
 }
 .center-menu li {
   display: inline-block;
@@ -3127,7 +3132,7 @@ body {
 }
 .profile__form {
   position: absolute;
-  z-index: 5;
+  z-index: 10;
   width: 265px;
   border: 1px solid #dedede;
   background: #fff;
@@ -3322,4 +3327,68 @@ body {
   z-index: 2;
   right: 8px;
   top: 5px;
+}
+.basket__text-title {
+  text-transform: uppercase;
+  font-family: 'PTSansCaptionBold';
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+.basket__text-item {
+  font-size: 11px;
+  color: #858585;
+  margin-bottom: 3px;
+}
+.basket__text-item:last-child {
+  margin-bottom: 0;
+}
+.basket__text-item span {
+  color: #000;
+}
+.header-icons {
+  position: relative;
+  padding-left: 80px;
+}
+.basket__icon {
+  opacity: 0.6;
+}
+.basket__number {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 17px;
+  height: 17px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #00b8bb;
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 16px;
+  right: -8px;
+  top: 0px;
+  opacity: 1;
+}
+.basket__status {
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-left: 1px solid #ececec;
+}
+.develop__text {
+  height: 120px;
+  font-size: 12px;
+  padding-top: 10px;
+}
+.develop__text span {
+  color: #fff;
+  opacity: 0.3;
+}
+.develop__text a {
+  opacity: 1;
+  color: yellow;
 }
