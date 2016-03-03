@@ -157,6 +157,12 @@
 	.hidden-xs{
 		display: none !important;
 	}
+	.contact-mobile__carousel .carousel-indicators{
+		bottom: 10px;
+	}
+	.contact-wrapp{
+		padding: 0 20px;
+	}
 	.info-order{
 		text-align: center;
 	}

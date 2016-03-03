@@ -444,15 +444,32 @@ body {
   color: #333;
   display: block;
   padding: 10px 20px;
+  padding-left: 30px;
   line-height: 1.2;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.side-menu a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 5px;
+  height: 5px;
+  background: #00b8bb;
+  left: 10px;
+  top: 50%;
+  margin-top: -2.5px;
 }
 .side-menu a:hover {
   background-color: #00b8bb !important;
   color: #fff;
+}
+.side-menu a:hover:before {
+  background: #fff;
 }
 .product-day-desc {
   text-align: center;
@@ -3391,4 +3408,135 @@ body {
 .develop__text a {
   opacity: 1;
   color: yellow;
+}
+.contact-list__item {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  padding: 0 22px;
+  line-height: 36px;
+  border: 2px solid #00b8bb;
+  color: #000;
+  font-size: 14px;
+  font-family: 'PTSansCaptionBold';
+  -webkit-transition: all .15s ease;
+  -moz-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+  margin: 0 2px;
+  margin-bottom: 10px;
+}
+.contact-list__item:hover,
+.contact-list__item.active {
+  background: #00b8bb;
+  color: #fff;
+}
+.contact-list {
+  text-align: center;
+  margin-top: 15px;
+}
+.contact-map {
+  margin-bottom: 10px;
+}
+.contact__title {
+  font-family: 'PTSansCaptionBold';
+  font-size: 15px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+.contact__tel {
+  color: #00b8bb;
+  font-family: 'PTSansCaptionBold';
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+.contact__small-title {
+  font-family: 'PTSansCaptionBold';
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+.contact__halls {
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: #858585;
+}
+.contact__text {
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+.contact__info {
+  font-size: 12px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  color: #ec5a24;
+}
+.department__tel {
+  font-size: 15px;
+  color: #00b8bb;
+  font-family: 'PTSansCaptionBold';
+  margin-bottom: 5px;
+}
+.department__mail {
+  font-size: 12px;
+  color: #333;
+}
+.department {
+  margin-bottom: 25px;
+}
+.find__title {
+  text-transform: uppercase;
+  font-family: 'PTSansCaptionBold';
+  padding-bottom: 10px;
+  font-size: 15px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 15px;
+}
+.contact__find {
+  margin-bottom: 20px;
+}
+.contact__find p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #858585;
+  margin-bottom: 10px;
+}
+.contact__carousel-item {
+  height: 250px;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.contact__carousel .carousel {
+  padding-right: 150px;
+}
+.contact__carousel .carousel-indicators {
+  left: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  margin-left: 0;
+}
+.contact__carousel .carousel-indicators li {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background: none;
+  text-indent: 0;
+  margin-bottom: 7px;
+}
+.contact__carousel .carousel-indicators li.active img {
+  border: 2px solid #00b8bb;
+}
+.contact__carousel .carousel-indicators li:last-child {
+  margin-bottom: 0;
+}
+.contact__carousel .carousel-indicators li img {
+  max-width: 100%;
+  height: auto;
 }
