@@ -152,6 +152,17 @@
 	.visible-xs{
 		display: none !important;
 	}
+	.card-info .add-fav-link:before {
+    content: "";
+    background: url(../images/heart-fav.png) no-repeat;
+    width: 17px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+	}
 }
 @media(max-width: 767px){
 	.hidden-xs{
@@ -162,6 +173,9 @@
 	}
 	.contact-wrapp{
 		padding: 0 20px;
+	}
+	.news-list{
+		padding: 0 10px;
 	}
 	.info-order{
 		text-align: center;
@@ -496,6 +510,12 @@
 	.order-basket-block{
 		padding-left: 15px;
 	}
+	.news-list__img{
+		display: none;
+	}
+	.news-list__item{
+		padding-left: 0;
+	}
 	.basket-title .promo-block{
 		clear: both;
 		float: none;
@@ -511,6 +531,13 @@
 	.fav-link .add-all{
 		width: 100%;
 		margin-left: 0;
+	}
+	.news-pages__left{
+		float: none;
+		margin-bottom: 15px;
+	}
+	.news-pages__right{
+		float: none;
 	}
 }
 
