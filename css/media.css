@@ -183,6 +183,9 @@
 	.basket-btn{
 		top: 3px;
 	}
+	.thumb-desc{
+		height: 40px;
+	}
 	.adress-container .col-xs-6{
 		width: 100%;
 		text-align: center;
@@ -411,9 +414,6 @@
 	}
 	.carousel-thumb .active .icon-3 {
 	  background: url(../images/gift_hover.svg) no-repeat 50% 0;
-	}
-	.thumb-desc h6{
-		margin-bottom: 5px;
 	}
 	.carousel-sale h4,
 	.last-news h4,
