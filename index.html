@@ -14,6 +14,7 @@
 	<script src="js/modernizr.min.js"></script>
 </head>
 <body>
+	<button class="supply-link">сообщить о поступлении</button>
 	<div class="container">
 		<header class="main-header">
 			<div class="mobile-top-panel visible-xs clearfix">
@@ -168,6 +169,14 @@
 							</a>
 						</div>
 					</div>
+				</div>
+				<div class="number visible-xs">
+					<div class="number-item">
+						<div class="number-item__text">
+							<b>+7 987 65-43-21</b>
+						</div>
+					</div>
+					<div class="day-item">Пн-СБ 10.00 - 20.00, Вс 10.00 - 19.00</div>
 				</div>
 				<div class="col-xs-6 hidden-xs">
 					<div class="row">
@@ -977,7 +986,34 @@
 		</footer>
 	</div>
 
-	
+	<div class="supply">
+		<div class="supply-wrapp">
+			<a href="#" class="supply__close">
+				<img src="images/close-profile.png" alt="">
+			</a>
+			<div class="supply__title">
+				сообщить о поступлении
+			</div>
+			<div class="supply__text">
+				Пожалуйста, заполните форму нижу, чтобы мы могли своевременно 
+				уведомить Вас о поступлении данной позиции товара:
+			</div>
+			<form action="">
+				<div class="supply__item">
+					<input type="text" placeholder="Ваше имя" class="supply__input">
+				</div>
+				<div class="supply__item">
+					<input type="text" placeholder="Ваш телефон" class="supply__input">
+				</div>
+				<div class="supply__item">
+					<input type="text" placeholder="E-mail" class="supply__input">
+				</div>
+				<div class="supply__item">
+					<input type="submit" value="Отправить" class="supply__submit">
+				</div>
+			</form>
+		</div>
+	</div>
 	
 	<script src="js/vendor.js"></script>
 	<script>

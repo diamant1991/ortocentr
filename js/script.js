@@ -158,3 +158,27 @@ $(function() {
 	  }
 	});
 });
+
+$(function() {
+	var mask = $('.supply'),
+			form = $('.supply').find('.supply-wrapp');
+	$('.supply-link').click(function(e) {
+		if(mask.is(':hidden')){
+			mask.fadeIn(300);
+			form.addClass('active');
+		}
+	});
+	$('.supply__close').click(function(e) {
+		e.preventDefault();
+		if(mask.is(':visible')){
+			form.removeClass('active');
+			mask.fadeOut(300);	
+		}
+	});
+	$(document).mouseup(function (e) {
+	  if (form.has(e.target).length === 0){
+	    form.removeClass('active');
+			mask.fadeOut(300);	
+	  }
+	});
+});

@@ -171,6 +171,11 @@
 	.contact-mobile__carousel .carousel-indicators{
 		bottom: 10px;
 	}
+	.number{
+		text-align: center;
+		padding: 10px 0;
+		border-bottom: 2px solid #f2f2f2;
+	}
 	.contact-wrapp{
 		padding: 0 20px;
 	}
@@ -345,6 +350,7 @@
 	}
 	.bottom-panel .col-xs-3{
 		width: 100%;
+		float: none;
 	}
 	.bottom-panel{
 		padding-top: 0;
