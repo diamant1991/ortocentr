@@ -171,6 +171,12 @@
 	.contact-mobile__carousel .carousel-indicators{
 		bottom: 10px;
 	}
+	.category{
+		padding: 0 10px;
+	}
+	.category__item{
+		width: 33.3%;
+	}
 	.number{
 		text-align: center;
 		padding: 10px 0;
@@ -182,6 +188,7 @@
 	.news-list{
 		padding: 0 10px;
 	}
+
 	.info-order{
 		text-align: center;
 	}
@@ -493,6 +500,9 @@
 
 @media(max-width: 600px){
 	.catalog-container .slide-item{
+		width: 50%;
+	}
+	.category__item{
 		width: 50%;
 	}
 	.private-tab{
