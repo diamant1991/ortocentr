@@ -463,7 +463,11 @@
 
 			<div class="other-content clearfix">
 				<div class="card-product clearfix">
-					<div class="card-item hidden-xs"></div>
+					<div class="card-item hidden-xs">
+						<a href="images/day-img.jpg" class="fancybox">
+							<img src="images/day-img.jpg" alt="">
+						</a>
+					</div>
 					<div class="card-info">
 						<div class="card-info-block">
 							<div class="articul">
@@ -1001,7 +1005,7 @@
 
 
 	<script src="js/vendor.js"></script>
-
+	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/script.js"></script>
 
 	<script>
@@ -1030,6 +1034,16 @@
 		      paginationSpeed : 400,
 		      singleItem:true
 		  });
+		  $(".fancybox").fancybox({
+		    padding : 0,
+		    openEffect	: 'elastic',
+				closeEffect	: 'elastic',
+				helpers: {
+					overlay: {
+						locked: false
+					}
+				}
+			});
 		});
 	</script>
 </body>
